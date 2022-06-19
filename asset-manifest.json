@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/TeamHomies/static/css/main.c6dc93ec.css",
+    "main.js": "/TeamHomies/static/js/main.e930f07b.js",
+    "static/js/787.2e9315e5.chunk.js": "/TeamHomies/static/js/787.2e9315e5.chunk.js",
+    "static/media/College.jpg": "/TeamHomies/static/media/College.47d45c13e2e3d1a36489.jpg",
+    "static/media/gurukul.png": "/TeamHomies/static/media/gurukul.080bc8ae5f2defe7986f.png",
+    "index.html": "/TeamHomies/index.html",
+    "main.c6dc93ec.css.map": "/TeamHomies/static/css/main.c6dc93ec.css.map",
+    "main.e930f07b.js.map": "/TeamHomies/static/js/main.e930f07b.js.map",
+    "787.2e9315e5.chunk.js.map": "/TeamHomies/static/js/787.2e9315e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6dc93ec.css",
+    "static/js/main.e930f07b.js"
+  ]
+}
