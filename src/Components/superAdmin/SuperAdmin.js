@@ -4,9 +4,14 @@ import { FaUserAlt ,FaUserGraduate} from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { GrEdit } from "react-icons/gr";
 import { MdDelete} from "react-icons/md";
+import { Link } from 'react-router-dom';
+import Gurukul from '../Images/gurukul.png'; 
 function SuperAdmin() {
   return (
-    <div className='background super_admin'>
+    <div className='background_super super_admin'>
+        <div>
+            <img className='logo1' src={Gurukul} alt="logo"/>
+        </div>
         <div className='registered container-fluid'>
         <div className='col-md-4 col-sm-12 register_container'>
             <FaUserAlt size={40}/>
@@ -29,13 +34,19 @@ function SuperAdmin() {
         </div>
 
         <div className='edit_reg'>
-            <button className='col-md-6 create_reg'>
-                <GrEdit/><h5>Create</h5>
-            </button>
-
-            <button className='col-md-6 delete_reg'>
-             <MdDelete/><h5>Delete</h5>
-            </button>
+            {/* <a href='/createReg' className='col-md-6 create_reg'>
+             <GrEdit size={20}/><h5>Create</h5>
+            </a> */}
+            <a class="btn_cre btn-border-4 col-md-6" href="/createReg">
+            <GrEdit size={20}/><h5>Create</h5>
+                </a>
+            
+            <a class="btn_del btn-border-4 col-md-6" href="/forgotPassword">
+                <MdDelete size={20}/><h5>Delete</h5>
+                </a>
+            {/* <a href='/forgotPassword' className='col-md-6 delete_reg'>
+             <MdDelete size={20}/><h5>Delete</h5>
+            </a> */}
         </div>
 
     </div>
