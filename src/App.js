@@ -5,6 +5,7 @@ import LoginAdmin from './Components/Login/Login_admin';
 import SuperAdminLogin from './Components/Login/SuperAdminLogin';
 import ForgotPassword from './Components/Login/ForgotPassword';
 import ResetPassword from './Components/Login/ResetPassword';
+import SuperAdmin from './Components/superAdmin/SuperAdmin';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route exact path = "/superAdminlogin" element={<SuperAdminLogin/>}/>
           <Route exact path = "/forgotPassword" element={<ForgotPassword/>}/>
           <Route exact path = "/resetPassword" element={<ResetPassword/>}/>
+          <Route exact path = "/superAdmin" element={<SuperAdmin/>}/>
         </Routes>
       </Router>
     </div>

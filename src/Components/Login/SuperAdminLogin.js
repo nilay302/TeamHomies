@@ -24,6 +24,8 @@ function SuperAdminLogin() {
     onSubmit: (values) => {
       console.log(values);
       LoginHandler(values);
+      values.username='';
+    values.password='';
     }
   });
 
@@ -48,7 +50,7 @@ function SuperAdminLogin() {
         const data = response.data;
         console.log(response.status);
         alert("Successfully Logged In");
-        window.location='/resetPassword';
+        window.location='/superAdmin';
       }
     })
     .catch((err) => {

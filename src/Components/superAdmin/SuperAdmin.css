@@ -1,0 +1,76 @@
+.registered{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.super_admin{
+    display: flex;
+    flex-direction: column;
+}
+.register_container{
+    background-color: white;
+    width: 29%;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: fit-content;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding-top: 1%;
+}
+.regHead{
+ padding-top: 2%;
+}
+.edit_reg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.create_reg{
+    background-color: white;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    opacity: 0.9;
+    margin-right: 2%;
+    margin-left: 27%;
+    width: 20%;
+    height: fit-content;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 0.5%;
+    background-color: #2666CF;
+}
+.delete_reg{
+    background-color: white;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    opacity: 0.9;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 20%; 
+    height: fit-content;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 0.5%;
+    background-color: #E83A14;
+}
+
+
+@media(max-width:756px){
+    .registered{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .register_container{
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    .create_reg{
+        width: 30%;
+        margin-left: 17%;
+    }
+    .delete_reg{
+        width: 30%;
+    }
+}

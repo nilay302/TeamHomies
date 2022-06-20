@@ -48,7 +48,7 @@ function LoginAdmin() {
         const data = response.data;
         console.log(response.status);
         alert("Successfully Logged In");
-        window.location='/resetPassword';
+        window.location ='/forgotPassword';
       }
     })
     .catch((err) => {
