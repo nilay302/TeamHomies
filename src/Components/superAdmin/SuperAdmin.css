@@ -191,7 +191,11 @@ width: calc(100% + 15px);
 height: calc(100% + 15px);
 border-color: #222222;
 }
-
+.log_table{
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 @media(max-width:756px){
     .registered{
         flex-direction: column;
@@ -330,6 +334,33 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 }
 @media(max-width:756px){
     .create_form{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* 
+Delete Reg */
+
+.delete_form{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20%;
+    /* margin-top: -8%; */
+    min-height: 100%;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+@media(max-width:756px){
+    .delete_form{
         width: 80%;
         margin-left: 10%;
     }

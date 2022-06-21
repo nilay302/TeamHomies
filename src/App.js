@@ -7,6 +7,7 @@ import ForgotPassword from './Components/Login/ForgotPassword';
 import ResetPassword from './Components/Login/ResetPassword';
 import SuperAdmin from './Components/superAdmin/SuperAdmin';
 import CreateReg from './Components/superAdmin/CreateReg';
+import DeleteReg from './Components/superAdmin/DeleteReg';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
           <Route exact path = "/resetPassword" element={<ResetPassword/>}/>
           <Route exact path = "/superAdmin" element={<SuperAdmin/>}/>
           <Route exact path = "/createReg" element={<CreateReg/>}/>
+          <Route exact path = "/deleteReg" element={<DeleteReg/>}/>
         </Routes>
       </Router>
     </div>
