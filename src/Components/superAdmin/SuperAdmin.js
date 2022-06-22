@@ -13,9 +13,12 @@ function SuperAdmin() {
   useEffect(() => {
     const URL = "https://wcegurukul.herokuapp.com/webHome";
     axios
-      .get(URL, {
+      .get(URL,
+       
+        {
         headers: {
           "Content-Type": "application/json",
+          "x-access-token": `${localStorage.getItem('token')}`,
         },
       })
       .then((response) => {
@@ -24,17 +27,19 @@ function SuperAdmin() {
           setRegData(response.data);
         } else {
           alert("Some error occurred.");
-          window.location = "/superAdmin";
+          window.location = "/superAdminLogin";
           return;
         }
       })
       .catch((err) => {
         alert("Some error occurred.");
-        window.location = "/superAdmin";
+        window.location = "/superAdminLogin";
         return;
       });
   }, []);
 
+
+  
   const columns = [
     {
       field: "username",
